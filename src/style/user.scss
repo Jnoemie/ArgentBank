@@ -1,0 +1,105 @@
+.account-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    background-color: #fff;
+    width: 80%;
+    margin: 0 auto;
+    flex-direction: column;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    text-align: left;
+    margin-bottom: 2rem;
+
+    &__body {
+        width: 100%;
+        flex: 1;
+
+        &__balance {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: bold;
+
+            &__details {
+                margin: 0;
+            }
+        }
+
+        &__header {
+            margin: 0;
+            padding: 0;
+            font-size: 1rem;
+            font-weight: normal;
+        }
+    }
+}
+
+.update-button {
+    border-color: #00bc77;
+    background-color: #00bc77;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.main-header {
+    color: #fff;
+    margin-bottom: 2rem;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .form__group {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            justify-content: center;
+
+            input {
+                padding: 10px;
+                width: 150px;
+                border-radius: 3px;
+                font-weight: 500;
+            }
+
+            button {
+                padding: 5px 20px;
+                width: 100px;
+                color: #6C60F5;
+                border: solid 1px #6C60F5;
+                border-radius: 3px;
+                font-weight: 500;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+.view-transactions__button {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    border-color: #00bc77;
+    background-color: #00bc77;
+    color: #fff;
+}
+
+@media (min-width: 720px) {
+    .account-item {
+        flex-direction: row;
+
+        &__body.cta {
+            flex: 0;
+        }
+    }
+
+    .view-transactions__button {
+        width: 200px;
+    }
+}
